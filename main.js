@@ -12,7 +12,12 @@ function calcola(event) {
 
     event.preventDefault()
 
-    console.log(`Chilometri= ${chilometriInputEl.value}`)
+    const chilometri = Number(chilometriInputEl.value)
+
+    if (chilometriInputEl.value == "" || isNaN(chilometri)) {
+        risultatoDivEl.innerText = "I chilometri inseriti sono in un formato errato"
+        return
+    }
 
     let costoBigliettoIniziale = chilometriInputEl.value * 0.21
     let costoBigliettoFinale = costoBigliettoIniziale

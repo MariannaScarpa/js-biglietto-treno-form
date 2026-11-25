@@ -8,19 +8,18 @@
 </head>
 
 <body>
-
-    <input type="number" class="chilometri">
-
-    <button onclick="calcola()" class="calcola">Calcola</button>
-
-    <div class="risultato"></div>
-
-    <select class="fascia">
-        <option value="junior">Minorenne</option>
-        <option value="base">Maggiorenne</option>
-        <option value="senior">Over 65</option>
-    </select>
-
+    <form id="biglietto-form">
+        <input type="number" id="chilometri">
+        <button type="submit">Calcola</button>
+        <div id="risultato">
+        </div>
+        <select id="fascia">
+            <option value="junior">Minorenne</option>
+            <option value="base">Maggiorenne</option>
+            <option value="senior">Over 65</option>
+        </select>
+        <input type="text" id="full-name">
+    </form>
     <script src="./main.js"></script>
 </body>
 
